@@ -15,8 +15,8 @@ public class RentUnit {
 	public void rentEquipmentCatalog() {
 		for (int i = 0; i < rentUnits.length; i++) {
 			if (rentUnits[i] != null) {
-				System.out.println("Unit in rent:" +
-						rentUnits[i].title + " " + rentUnits[i].category + " " + "price = " + rentUnits[i].price);
+				System.out.println("Unit in rent:" + rentUnits[i].title + " " + rentUnits[i].category + " " + "price = "
+						+ rentUnits[i].price);
 			}
 		}
 	}

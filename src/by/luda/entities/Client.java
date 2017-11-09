@@ -5,10 +5,10 @@ import java.util.Arrays;
 public class Client {
 	private String name;
 	private int passportId;
-	private Equipment[] rentUnits;
+	private Equipment[] clientRentUnits;
 
-	public void RentUnit(int number) {
-		rentUnits = new Equipment[2];
+	public Client(int number) {
+		clientRentUnits = new Equipment[number];
 	}
 
 	public Client(String name, int passportId) {
@@ -33,11 +33,11 @@ public class Client {
 		this.passportId = passportId;
 	}
 
-	public void addRentEquipment(Equipment rentUnit, int index) {
-		rentUnits[index] = rentUnit;
+	public void addRentEquipment(Equipment clientRentUnit, int index) {
+		clientRentUnits[index] = clientRentUnit;
 	}
 
-	public void clientInfoOutput(String name, int passportId, Equipment[] rentUnits) {
-		System.out.println(name + " " + passportId + " " + Arrays.toString(rentUnits));
+	public void clientInfoOutput(String name, int passportId) {
+		System.out.println(name + " " + passportId + " " + Arrays.toString(clientRentUnits));
 	}
 }

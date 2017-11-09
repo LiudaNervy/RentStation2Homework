@@ -10,6 +10,8 @@ private Equipment[] availableUnits;
 
 public void addEquipment (Equipment availableUnit, int index) {
 availableUnits[index] = availableUnit;
+
+
 }
 
 	public void equipmentCatalog () {

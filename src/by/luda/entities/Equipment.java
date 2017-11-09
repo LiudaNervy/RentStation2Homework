@@ -5,15 +5,23 @@ public class Equipment {
 	protected String title;
 	protected double price;
 	protected String manufacturer;
-	protected int inRent;
+	protected String availability;
 	
-	public Equipment(Category category, String title, double price, String manufacturer, int inRent) {
+	public Equipment(Category category, String title, double price, String manufacturer, String availability) {
 		super();
 		this.category = category;
 		this.title = title;
 		this.price = price;
 		this.manufacturer = manufacturer;
-		this.inRent = inRent;
+		this.availability = availability;
+	}
+
+	public String getAvailability() {
+		return availability;
+	}
+
+	public void setAvailability(String availability) {
+		this.availability = availability;
 	}
 
 	
